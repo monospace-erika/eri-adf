@@ -1,0 +1,25 @@
+{
+	"name": "everyOneMin",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyCSVToSQL",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2022-06-30T10:30:00",
+				"endTime": "2022-07-04T10:45:00",
+				"timeZone": "Tokyo Standard Time"
+			}
+		}
+	}
+}

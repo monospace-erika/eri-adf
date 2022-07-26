@@ -1,0 +1,9 @@
+{
+	"name": "eri-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "198b1d3f-cffd-4711-80c3-53b2be2a9a19",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}

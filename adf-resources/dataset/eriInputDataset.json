@@ -1,0 +1,22 @@
+{
+	"name": "eriInputDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "eriBlobLinked",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Eri_Test"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "emp.txt",
+				"container": "input"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

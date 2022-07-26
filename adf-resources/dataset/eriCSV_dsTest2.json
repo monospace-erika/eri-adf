@@ -1,0 +1,1428 @@
+{
+	"name": "eriCSV_dsTest2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "eriBlobLinked",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "kita_test2"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "eri_test_data.csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "司計契約分類Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "証書番号",
+				"type": "String"
+			},
+			{
+				"name": "再保険Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "請求年月日",
+				"type": "String"
+			},
+			{
+				"name": "処理年月日",
+				"type": "String"
+			},
+			{
+				"name": "計理年月日",
+				"type": "String"
+			},
+			{
+				"name": "受付年月日",
+				"type": "String"
+			},
+			{
+				"name": "失効年月日",
+				"type": "String"
+			},
+			{
+				"name": "復活年月日",
+				"type": "String"
+			},
+			{
+				"name": "決算年度月",
+				"type": "String"
+			},
+			{
+				"name": "商品区分経理Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "保年種類",
+				"type": "String"
+			},
+			{
+				"name": "責任開始年度月日",
+				"type": "String"
+			},
+			{
+				"name": "効年度月日",
+				"type": "String"
+			},
+			{
+				"name": "基区分",
+				"type": "String"
+			},
+			{
+				"name": "受付府県",
+				"type": "String"
+			},
+			{
+				"name": "受付局種",
+				"type": "String"
+			},
+			{
+				"name": "受付局番",
+				"type": "String"
+			},
+			{
+				"name": "受持府県",
+				"type": "String"
+			},
+			{
+				"name": "受持局種",
+				"type": "String"
+			},
+			{
+				"name": "受持局総担Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "受持局番",
+				"type": "String"
+			},
+			{
+				"name": "契性別",
+				"type": "String"
+			},
+			{
+				"name": "契生年月日",
+				"type": "String"
+			},
+			{
+				"name": "被性別",
+				"type": "String"
+			},
+			{
+				"name": "被加入齢",
+				"type": "String"
+			},
+			{
+				"name": "被生年月日",
+				"type": "String"
+			},
+			{
+				"name": "被死年月日",
+				"type": "String"
+			},
+			{
+				"name": "配性別",
+				"type": "String"
+			},
+			{
+				"name": "配加入齢",
+				"type": "String"
+			},
+			{
+				"name": "配生年月日",
+				"type": "String"
+			},
+			{
+				"name": "配死年月日",
+				"type": "String"
+			},
+			{
+				"name": "払済齢",
+				"type": "String"
+			},
+			{
+				"name": "支開齢",
+				"type": "String"
+			},
+			{
+				"name": "支期",
+				"type": "String"
+			},
+			{
+				"name": "無配当傷害前歴Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "無配当疾傷前歴Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "被特Ｃ種類Ｔ（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特Ｃ種類Ｔ（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特Ｃ種類Ｔ（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特Ｃ種類Ｔ（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特Ｃ種類Ｔ（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特Ｃ種類Ｔ（３）",
+				"type": "String"
+			},
+			{
+				"name": "被特免Ｃ種類Ｔ（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特免Ｃ種類Ｔ（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特免Ｃ種類Ｔ（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特免Ｃ種類Ｔ（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特免Ｃ種類Ｔ（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特免Ｃ種類Ｔ（３）",
+				"type": "String"
+			},
+			{
+				"name": "対象特Ｃ種類（１）",
+				"type": "String"
+			},
+			{
+				"name": "対象特Ｃ種類（２）",
+				"type": "String"
+			},
+			{
+				"name": "対象特Ｃ種類（３）",
+				"type": "String"
+			},
+			{
+				"name": "異消年事由",
+				"type": "String"
+			},
+			{
+				"name": "異消年サブＣ",
+				"type": "String"
+			},
+			{
+				"name": "サマリＣ",
+				"type": "String"
+			},
+			{
+				"name": "支払判別Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "支払種別Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "支払形態別Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "複数支払通知書判定Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "異消年月日",
+				"type": "String"
+			},
+			{
+				"name": "ＴＣＩＴコード",
+				"type": "String"
+			},
+			{
+				"name": "支払通知書番号",
+				"type": "String"
+			},
+			{
+				"name": "ＳＣ番号",
+				"type": "String"
+			},
+			{
+				"name": "請求受付局番号",
+				"type": "String"
+			},
+			{
+				"name": "態様",
+				"type": "String"
+			},
+			{
+				"name": "死後有効中判別Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "払種類",
+				"type": "String"
+			},
+			{
+				"name": "払方法",
+				"type": "String"
+			},
+			{
+				"name": "Ｐ払Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "払済最年月",
+				"type": "String"
+			},
+			{
+				"name": "Ｐ払年月",
+				"type": "String"
+			},
+			{
+				"name": "初Ｐ未受領Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "支種別",
+				"type": "String"
+			},
+			{
+				"name": "支済最年月",
+				"type": "String"
+			},
+			{
+				"name": "家族Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "法人契約Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "請求種別Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "補正判別Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "死傷入等原因番号",
+				"type": "String"
+			},
+			{
+				"name": "死傷入等原因番号２",
+				"type": "String"
+			},
+			{
+				"name": "死傷入等原因番号３",
+				"type": "String"
+			},
+			{
+				"name": "入院前歴原因番号",
+				"type": "String"
+			},
+			{
+				"name": "障害等級番号",
+				"type": "String"
+			},
+			{
+				"name": "手術Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "手術支倍率",
+				"type": "String"
+			},
+			{
+				"name": "入院区分",
+				"type": "String"
+			},
+			{
+				"name": "入院日数",
+				"type": "String"
+			},
+			{
+				"name": "入院開始年月日",
+				"type": "String"
+			},
+			{
+				"name": "入院一時金支払回数",
+				"type": "String"
+			},
+			{
+				"name": "要介護Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "支開後重障前歴Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "前歴年Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "充当変前歴年Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "Ｓ支払状況Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "前請求有無Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "時効完成識別Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "年支回",
+				"type": "String"
+			},
+			{
+				"name": "健康祝金支回",
+				"type": "String"
+			},
+			{
+				"name": "削減Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "特Ｓ支判別Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "法弁処理Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "上支期",
+				"type": "String"
+			},
+			{
+				"name": "繰上支開年月日",
+				"type": "String"
+			},
+			{
+				"name": "即時変年月日",
+				"type": "String"
+			},
+			{
+				"name": "料済前歴年月日",
+				"type": "String"
+			},
+			{
+				"name": "喫煙Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "喫煙本数",
+				"type": "String"
+			},
+			{
+				"name": "件数",
+				"type": "String"
+			},
+			{
+				"name": "保険料額",
+				"type": "String"
+			},
+			{
+				"name": "営業保険料額",
+				"type": "String"
+			},
+			{
+				"name": "初Ｂ",
+				"type": "String"
+			},
+			{
+				"name": "加入時年金額",
+				"type": "String"
+			},
+			{
+				"name": "加入時年金額増額部分",
+				"type": "String"
+			},
+			{
+				"name": "基本年金額",
+				"type": "String"
+			},
+			{
+				"name": "年金額",
+				"type": "String"
+			},
+			{
+				"name": "付加Ａ１",
+				"type": "String"
+			},
+			{
+				"name": "付加Ａ２",
+				"type": "String"
+			},
+			{
+				"name": "付加Ａ３",
+				"type": "String"
+			},
+			{
+				"name": "年金原資",
+				"type": "String"
+			},
+			{
+				"name": "責任準備金",
+				"type": "String"
+			},
+			{
+				"name": "介護割増年金原資",
+				"type": "String"
+			},
+			{
+				"name": "介護割増責任準備金",
+				"type": "String"
+			},
+			{
+				"name": "特約のみ転換回数",
+				"type": "String"
+			},
+			{
+				"name": "転換特別取扱Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特Ｃ種類（１）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特責任開始年月日（１）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特効年月日（１）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特区分（１）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特Ｐ（１）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特Ｓ（１）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特転換価格（１）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特Ｃ種類（２）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特責任開始年月日（２）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特効年月日（２）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特区分（２）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特Ｐ（２）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特Ｓ（２）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特転換価格（２）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特Ｃ種類（３）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特責任開始年月日（３）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特効年月日（３）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特区分（３）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特Ｐ（３）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特Ｓ（３）",
+				"type": "String"
+			},
+			{
+				"name": "転換前被特転換価格（３）",
+				"type": "String"
+			},
+			{
+				"name": "転換時特約充当価格１",
+				"type": "String"
+			},
+			{
+				"name": "転換時特約充当価格２",
+				"type": "String"
+			},
+			{
+				"name": "転換時特約充当価格３",
+				"type": "String"
+			},
+			{
+				"name": "下取特約Ｓ１転換用",
+				"type": "String"
+			},
+			{
+				"name": "下取特約Ｓ２転換用",
+				"type": "String"
+			},
+			{
+				"name": "下取特約Ｓ３転換用",
+				"type": "String"
+			},
+			{
+				"name": "Ｐ振替貸付金",
+				"type": "String"
+			},
+			{
+				"name": "契約者貸付金",
+				"type": "String"
+			},
+			{
+				"name": "特約死亡保険金額",
+				"type": "String"
+			},
+			{
+				"name": "積",
+				"type": "String"
+			},
+			{
+				"name": "特積１",
+				"type": "String"
+			},
+			{
+				"name": "特積２",
+				"type": "String"
+			},
+			{
+				"name": "特積３",
+				"type": "String"
+			},
+			{
+				"name": "配特積１",
+				"type": "String"
+			},
+			{
+				"name": "配特積２",
+				"type": "String"
+			},
+			{
+				"name": "配特積３",
+				"type": "String"
+			},
+			{
+				"name": "基本解約控除額",
+				"type": "String"
+			},
+			{
+				"name": "被特解約控除額１",
+				"type": "String"
+			},
+			{
+				"name": "被特解約控除額２",
+				"type": "String"
+			},
+			{
+				"name": "被特解約控除額３",
+				"type": "String"
+			},
+			{
+				"name": "配特解約控除額１",
+				"type": "String"
+			},
+			{
+				"name": "配特解約控除額２",
+				"type": "String"
+			},
+			{
+				"name": "配特解約控除額３",
+				"type": "String"
+			},
+			{
+				"name": "剰",
+				"type": "String"
+			},
+			{
+				"name": "特剰１",
+				"type": "String"
+			},
+			{
+				"name": "特剰２",
+				"type": "String"
+			},
+			{
+				"name": "特剰３",
+				"type": "String"
+			},
+			{
+				"name": "配特剰１",
+				"type": "String"
+			},
+			{
+				"name": "配特剰２",
+				"type": "String"
+			},
+			{
+				"name": "配特剰３",
+				"type": "String"
+			},
+			{
+				"name": "基還",
+				"type": "String"
+			},
+			{
+				"name": "特還１",
+				"type": "String"
+			},
+			{
+				"name": "特還２",
+				"type": "String"
+			},
+			{
+				"name": "特還３",
+				"type": "String"
+			},
+			{
+				"name": "配特還１",
+				"type": "String"
+			},
+			{
+				"name": "配特還２",
+				"type": "String"
+			},
+			{
+				"name": "配特還３",
+				"type": "String"
+			},
+			{
+				"name": "特給付Ｓ１",
+				"type": "String"
+			},
+			{
+				"name": "特給付Ｓ２",
+				"type": "String"
+			},
+			{
+				"name": "特給付Ｓ３",
+				"type": "String"
+			},
+			{
+				"name": "遅延利息額",
+				"type": "String"
+			},
+			{
+				"name": "特チルメル１",
+				"type": "String"
+			},
+			{
+				"name": "特チルメル２",
+				"type": "String"
+			},
+			{
+				"name": "特チルメル３",
+				"type": "String"
+			},
+			{
+				"name": "弁済金額",
+				"type": "String"
+			},
+			{
+				"name": "払表定Ａ",
+				"type": "String"
+			},
+			{
+				"name": "源泉徴収金額",
+				"type": "String"
+			},
+			{
+				"name": "繰上支金額",
+				"type": "String"
+			},
+			{
+				"name": "未経Ｐ",
+				"type": "String"
+			},
+			{
+				"name": "未払Ｐ",
+				"type": "String"
+			},
+			{
+				"name": "未払Ａ",
+				"type": "String"
+			},
+			{
+				"name": "一時払Ｐ",
+				"type": "String"
+			},
+			{
+				"name": "一時払Ａ",
+				"type": "String"
+			},
+			{
+				"name": "介護割増Ｐ",
+				"type": "String"
+			},
+			{
+				"name": "介護割増営業Ｐ",
+				"type": "String"
+			},
+			{
+				"name": "介護割増Ａ",
+				"type": "String"
+			},
+			{
+				"name": "加入時年金額介護割増",
+				"type": "String"
+			},
+			{
+				"name": "介護割増年還",
+				"type": "String"
+			},
+			{
+				"name": "通知書支払金額",
+				"type": "String"
+			},
+			{
+				"name": "発生支払金額",
+				"type": "String"
+			},
+			{
+				"name": "発生介護年金額",
+				"type": "String"
+			},
+			{
+				"name": "被特責任開始年月日（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特効年月日（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特増効年月日（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特区分（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特加入齢（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特Ｎ（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特Ｐ（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特営業Ｐ（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特Ｓ（１）",
+				"type": "String"
+			},
+			{
+				"name": "加入時被特Ｓ（１）",
+				"type": "String"
+			},
+			{
+				"name": "加入時被特Ｓ増額部分（１）",
+				"type": "String"
+			},
+			{
+				"name": "加入時被特Ｓ充当（１）",
+				"type": "String"
+			},
+			{
+				"name": "加入時被特Ｓ払込（１）",
+				"type": "String"
+			},
+			{
+				"name": "特約解約控除額充当（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特既払Ｓ（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特最終Ｐ（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特最終営業Ｐ（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特最終Ｓ（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特最終既払Ｓ（１）",
+				"type": "String"
+			},
+			{
+				"name": "被特責任開始年月日（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特効年月日（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特増効年月日（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特区分（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特加入齢（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特Ｎ（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特Ｐ（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特営業Ｐ（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特Ｓ（２）",
+				"type": "String"
+			},
+			{
+				"name": "加入時被特Ｓ（２）",
+				"type": "String"
+			},
+			{
+				"name": "加入時被特Ｓ増額部分（２）",
+				"type": "String"
+			},
+			{
+				"name": "加入時被特Ｓ充当（２）",
+				"type": "String"
+			},
+			{
+				"name": "加入時被特Ｓ払込（２）",
+				"type": "String"
+			},
+			{
+				"name": "特約解約控除額充当（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特既払Ｓ（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特最終Ｐ（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特最終営業Ｐ（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特最終Ｓ（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特最終既払Ｓ（２）",
+				"type": "String"
+			},
+			{
+				"name": "被特責任開始年月日（３）",
+				"type": "String"
+			},
+			{
+				"name": "被特効年月日（３）",
+				"type": "String"
+			},
+			{
+				"name": "被特増効年月日（３）",
+				"type": "String"
+			},
+			{
+				"name": "被特区分（３）",
+				"type": "String"
+			},
+			{
+				"name": "被特加入齢（３）",
+				"type": "String"
+			},
+			{
+				"name": "被特Ｎ（３）",
+				"type": "String"
+			},
+			{
+				"name": "被特Ｐ（３）",
+				"type": "String"
+			},
+			{
+				"name": "被特営業Ｐ（３）",
+				"type": "String"
+			},
+			{
+				"name": "被特Ｓ（３）",
+				"type": "String"
+			},
+			{
+				"name": "加入時被特Ｓ（３）",
+				"type": "String"
+			},
+			{
+				"name": "加入時被特Ｓ増額部分（３）",
+				"type": "String"
+			},
+			{
+				"name": "加入時被特Ｓ充当（３）",
+				"type": "String"
+			},
+			{
+				"name": "加入時被特Ｓ払込（３）",
+				"type": "String"
+			},
+			{
+				"name": "特約解約控除額充当（３）",
+				"type": "String"
+			},
+			{
+				"name": "被特既払Ｓ（３）",
+				"type": "String"
+			},
+			{
+				"name": "被特最終Ｐ（３）",
+				"type": "String"
+			},
+			{
+				"name": "被特最終営業Ｐ（３）",
+				"type": "String"
+			},
+			{
+				"name": "被特最終Ｓ（３）",
+				"type": "String"
+			},
+			{
+				"name": "被特最終既払Ｓ（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特責任開始年月日（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特効年月日（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特増効年月日（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特区分（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特加入齢（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特Ｎ（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特Ｐ（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特営業Ｐ（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特Ｓ（１）",
+				"type": "String"
+			},
+			{
+				"name": "加入時配特Ｓ（１）",
+				"type": "String"
+			},
+			{
+				"name": "加入時配特Ｓ増額部分（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特既払Ｓ（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特最終Ｐ（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特最終営業Ｐ（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特最終Ｓ（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特最終既払Ｓ（１）",
+				"type": "String"
+			},
+			{
+				"name": "配特責任開始年月日（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特効年月日（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特増効年月日（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特区分（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特加入齢（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特Ｎ（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特Ｐ（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特営業Ｐ（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特Ｓ（２）",
+				"type": "String"
+			},
+			{
+				"name": "加入時配特Ｓ（２）",
+				"type": "String"
+			},
+			{
+				"name": "加入時配特Ｓ増額部分（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特既払Ｓ（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特最終Ｐ（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特最終営業Ｐ（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特最終Ｓ（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特最終既払Ｓ（２）",
+				"type": "String"
+			},
+			{
+				"name": "配特責任開始年月日（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特効年月日（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特増効年月日（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特区分（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特加入齢（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特Ｎ（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特Ｐ（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特営業Ｐ（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特Ｓ（３）",
+				"type": "String"
+			},
+			{
+				"name": "加入時配特Ｓ（３）",
+				"type": "String"
+			},
+			{
+				"name": "加入時配特Ｓ増額部分（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特既払Ｓ（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特最終Ｐ（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特最終営業Ｐ（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特最終Ｓ（３）",
+				"type": "String"
+			},
+			{
+				"name": "配特最終既払Ｓ（３）",
+				"type": "String"
+			},
+			{
+				"name": "年金買増Ｐ",
+				"type": "String"
+			},
+			{
+				"name": "年金買増被特Ｐ１",
+				"type": "String"
+			},
+			{
+				"name": "年金買増被特Ｐ２",
+				"type": "String"
+			},
+			{
+				"name": "年金買増被特Ｐ３",
+				"type": "String"
+			},
+			{
+				"name": "年金買増配特Ｐ１",
+				"type": "String"
+			},
+			{
+				"name": "年金買増配特Ｐ２",
+				"type": "String"
+			},
+			{
+				"name": "年金買増配特Ｐ３",
+				"type": "String"
+			},
+			{
+				"name": "下取契約一時払Ｐ",
+				"type": "String"
+			},
+			{
+				"name": "下取契約被特一時払Ｐ１",
+				"type": "String"
+			},
+			{
+				"name": "下取契約被特一時払Ｐ２",
+				"type": "String"
+			},
+			{
+				"name": "下取契約被特一時払Ｐ３",
+				"type": "String"
+			},
+			{
+				"name": "下取契約配特一時払Ｐ１",
+				"type": "String"
+			},
+			{
+				"name": "下取契約配特一時払Ｐ２",
+				"type": "String"
+			},
+			{
+				"name": "下取契約配特一時払Ｐ３",
+				"type": "String"
+			},
+			{
+				"name": "当年度基配当利息額",
+				"type": "String"
+			},
+			{
+				"name": "当年度被配当利息額１",
+				"type": "String"
+			},
+			{
+				"name": "当年度被配当利息額２",
+				"type": "String"
+			},
+			{
+				"name": "当年度被配当利息額３",
+				"type": "String"
+			},
+			{
+				"name": "当年度配配当利息額１",
+				"type": "String"
+			},
+			{
+				"name": "当年度配配当利息額２",
+				"type": "String"
+			},
+			{
+				"name": "当年度配配当利息額３",
+				"type": "String"
+			},
+			{
+				"name": "年度始基積配当金額",
+				"type": "String"
+			},
+			{
+				"name": "年度始被特積配当金額１",
+				"type": "String"
+			},
+			{
+				"name": "年度始被特積配当金額２",
+				"type": "String"
+			},
+			{
+				"name": "年度始被特積配当金額３",
+				"type": "String"
+			},
+			{
+				"name": "年度始配特積配当金額１",
+				"type": "String"
+			},
+			{
+				"name": "年度始配特積配当金額２",
+				"type": "String"
+			},
+			{
+				"name": "年度始配特積配当金額３",
+				"type": "String"
+			},
+			{
+				"name": "当年度基配当金額",
+				"type": "String"
+			},
+			{
+				"name": "当年度被配当金額１",
+				"type": "String"
+			},
+			{
+				"name": "当年度被配当金額２",
+				"type": "String"
+			},
+			{
+				"name": "当年度被配当金額３",
+				"type": "String"
+			},
+			{
+				"name": "当年度配配当金額１",
+				"type": "String"
+			},
+			{
+				"name": "当年度配配当金額２",
+				"type": "String"
+			},
+			{
+				"name": "当年度配配当金額３",
+				"type": "String"
+			},
+			{
+				"name": "契約保有高Ａ",
+				"type": "String"
+			},
+			{
+				"name": "契約保有高Ｂ",
+				"type": "String"
+			},
+			{
+				"name": "契約保有高Ｃ",
+				"type": "String"
+			},
+			{
+				"name": "パターンコード",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

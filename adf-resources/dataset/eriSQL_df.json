@@ -1,0 +1,54 @@
+{
+	"name": "eriSQL_df",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "eriSqlLinked",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Eri_Test"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "司計契約分類Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "証書番号",
+				"type": "nvarchar"
+			},
+			{
+				"name": "再保険Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "signal",
+				"type": "nvarchar"
+			},
+			{
+				"name": "isStatus",
+				"type": "nvarchar"
+			},
+			{
+				"name": "workplace",
+				"type": "nvarchar"
+			},
+			{
+				"name": "isMail",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Cars"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

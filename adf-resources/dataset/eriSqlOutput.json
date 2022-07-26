@@ -1,0 +1,45 @@
+{
+	"name": "eriSqlOutput",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "eriSqlLinked",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Eri_Test"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Make",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Model",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Origin",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DriveTrain",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Length",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Cars"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

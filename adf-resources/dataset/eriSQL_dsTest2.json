@@ -1,0 +1,3270 @@
+{
+	"name": "eriSQL_dsTest2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "eriSqlLinked",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "kita_test2"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "司計契約分類Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "商品区分経理Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "決算年度月",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "証書番号",
+				"type": "nvarchar"
+			},
+			{
+				"name": "再保険Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "保年種類",
+				"type": "nvarchar"
+			},
+			{
+				"name": "保年種類変更後",
+				"type": "nvarchar"
+			},
+			{
+				"name": "効年度月日",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "責任開始年度月日",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "基区分",
+				"type": "nvarchar"
+			},
+			{
+				"name": "基本Ｓ",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "受付府県",
+				"type": "nvarchar"
+			},
+			{
+				"name": "受付局種",
+				"type": "nvarchar"
+			},
+			{
+				"name": "受持府県",
+				"type": "nvarchar"
+			},
+			{
+				"name": "受持局種",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被性別",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被生年",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被生月",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被生日",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被加入齢",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配契性別",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配契生年",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配契生月",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配契生日",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配契加入齢",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "出生通知時契年齢",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特Ｃ種類Ｔ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特Ｃ種類Ｔ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特Ｃ種類Ｔ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特Ｃ種類Ｔ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特Ｃ種類Ｔ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特Ｃ種類Ｔ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "職域現在年齢",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Ｐ払Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "払方法",
+				"type": "nvarchar"
+			},
+			{
+				"name": "割引Ｃ",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Ｐ払年月",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "払済最年月",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "先進医療特約払済最年月",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "災害猶予年月数",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被保険者延滞前納保Ｃ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被保険者延滞前納保Ｃ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被保険者延滞前納保Ｃ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配偶者延滞前納保Ｃ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配偶者延滞前納保Ｃ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配偶者延滞前納保Ｃ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被保険者延滞前納月数（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被保険者延滞前納月数（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被保険者延滞前納月数（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配偶者延滞前納月数（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配偶者延滞前納月数（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配偶者延滞前納月数（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "前納年月数",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "複数回前納Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被保険者初Ｐ未受領Ｃ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被保険者初Ｐ未受領Ｃ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被保険者初Ｐ未受領Ｃ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配偶者初Ｐ未受領Ｃ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配偶者初Ｐ未受領Ｃ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配偶者初Ｐ未受領Ｃ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "割引適用年月",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "初Ｐ未入金月数",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "分割払込済月数",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "無配当傷特約前歴Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "無配当疾傷特約前歴Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "特約のみＣ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "特約免除非該当Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "団体加入Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "割引率改正Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "法人契約Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "損Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "法人団体番号",
+				"type": "nvarchar"
+			},
+			{
+				"name": "日本郵便募集Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "喫煙Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "喫煙本数Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "要介護Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "介護支払回数",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "介護Ｓ支払事由発生年月日",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被告知傷病Ｃ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被告知傷病Ｃ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被告知傷病Ｃ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被引受審査結果Ｃ・かんぽ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被引受審査結果Ｃ・かんぽ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被引受審査結果Ｃ・かんぽ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被引受審査結果Ｃ・出再（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被引受審査結果Ｃ・出再（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被引受審査結果Ｃ・出再（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "契告知傷病Ｃ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "契告知傷病Ｃ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "契告知傷病Ｃ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "契引受審査結果Ｃ・かんぽ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "契引受審査結果Ｃ・かんぽ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "契引受審査結果Ｃ・かんぽ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "契引受審査結果Ｃ・出再（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "契引受審査結果Ｃ・出再（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "契引受審査結果Ｃ・出再（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "最終審査結果Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "分割払込残月数",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "態様",
+				"type": "nvarchar"
+			},
+			{
+				"name": "年支回",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "入院一時金支払回数",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特生存Ｃ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特効年月日（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特責任開始年月日（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特区分（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特加入齢（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特支払割合（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特祝支払割合（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特支払金額（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特支払金額転換特別取扱（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特支払金額転換後保証（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被祝金更正Ｃ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特消滅Ｃ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特同時解約Ｃ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特保険金倍率区分（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特生存Ｃ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特効年月日（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特責任開始年月日（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特区分（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特加入齢（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特支払割合（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特祝支払割合（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特支払金額（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特支払金額転換特別取扱（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特支払金額転換後保証（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被祝金更正Ｃ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特消滅Ｃ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特同時解約Ｃ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特保険金倍率区分（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特生存Ｃ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特効年月日（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特責任開始年月日（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特区分（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特加入齢（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特支払割合（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特祝支払割合（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特支払金額（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特支払金額転換特別取扱（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特支払金額転換後保証（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被祝金更正Ｃ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特消滅Ｃ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特同時解約Ｃ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "被特保険金倍率区分（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特生存Ｃ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特効年月日（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特責任開始年月日（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特区分（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特加入齢（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特支払割合（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特祝支払割合（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配祝金更正Ｃ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特消滅Ｃ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特同時解約Ｃ（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特生存Ｃ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特効年月日（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特責任開始年月日（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特区分（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特加入齢（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特支払割合（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特祝支払割合（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配祝金更正Ｃ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特消滅Ｃ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特同時解約Ｃ（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特生存Ｃ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特効年月日（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特責任開始年月日（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特区分（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特加入齢（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特支払割合（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特祝支払割合（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配祝金更正Ｃ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特消滅Ｃ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "配特同時解約Ｃ（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "介入権判別Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "契死亡Ｃ",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "変更Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "変更年月日",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "末Ｄ等未編集判定Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "払込不要Ｃ",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "払込不要年月",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "満期年月日",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "更新年月日",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "復活年月日",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "重障払免Ｃ",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "加入時被特Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "加入時被特Ｓ充当（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "加入時被特Ｓ払込（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "特約解約控除額充当（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "加入時被特Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "加入時被特Ｓ充当（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "加入時被特Ｓ払込（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "特約解約控除額充当（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "加入時被特Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "加入時被特Ｓ充当（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "加入時被特Ｓ払込（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "特約解約控除額充当（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "加入時配特Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "加入時配特Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "加入時配特Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "同被特効年月（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "旧被特Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "旧被特Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "同被特効年月（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "旧被特Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "旧被特Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "同被特効年月（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "旧被特Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "旧被特Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "同配特効年月（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "旧配特Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "旧配特Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "同配特効年月（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "旧配特Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "旧配特Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "同配特効年月（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "旧配特Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "旧配特Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取被特Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取被特評価Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取被特一時払Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取被特Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取被特評価Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取被特一時払Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取被特Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取被特評価Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取被特一時払Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取配特Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取配特評価Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取配特一時払Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取配特Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取配特評価Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取配特一時払Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取配特Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取配特評価Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取配特一時払Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "変更効発年月",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "全部転換回数",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "特約のみ転換回数",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前商品区分経理Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "転換前証書番号",
+				"type": "nvarchar"
+			},
+			{
+				"name": "転換前保年種類",
+				"type": "nvarchar"
+			},
+			{
+				"name": "転換前責任開始年度月日",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前効年度月日",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前基区分",
+				"type": "nvarchar"
+			},
+			{
+				"name": "転換前Ｐ払Ｃ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "転換前基本Ｐ",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前基本Ｓ",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前基本転換価格",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特種類（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "転換前被特責任開始年月日（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特効年月日（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特区分（１）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "転換前被特加入齢（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特転換価格（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特種類（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "転換前被特責任開始年月日（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特効年月日（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特区分（２）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "転換前被特加入齢（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特転換価格（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特種類（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "転換前被特責任開始年月日（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特効年月日（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特区分（３）",
+				"type": "nvarchar"
+			},
+			{
+				"name": "転換前被特加入齢（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換前被特転換価格（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換時基本充当価格",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換時特約充当価格（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換時特約充当価格（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "転換時特約充当価格（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取基本Ｓ転換用",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取特約Ｓ転換用（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取特約Ｓ転換用（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "下取特約Ｓ転換用（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "算出基準年月日",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "特差Ｐ",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "年度始特差Ｐ",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "当年度特差配当金額",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "当年度特差配当利息額",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特純Ｖ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特解約返戻金相当額（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特剰・通（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特年度始積配当金額（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特当年度配当金額（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特当年度配当利息額（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特前納未経過Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特普通未経過Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特純Ｖ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特解約返戻金相当額（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特剰・通（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特年度始積配当金額（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特当年度配当金額（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特当年度配当利息額（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特前納未経過Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特普通未経過Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特純Ｖ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特解約返戻金相当額（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特剰・通（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特年度始積配当金額（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特当年度配当金額（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特当年度配当利息額（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特前納未経過Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "被特普通未経過Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特純Ｖ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特解約返戻金相当額（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特剰・通（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特年度始積配当金額（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特当年度配当金額（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特当年度配当利息額（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特前納未経過Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特普通未経過Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特純Ｖ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特解約返戻金相当額（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特剰・通（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特年度始積配当金額（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特当年度配当金額（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特当年度配当利息額（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特前納未経過Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特普通未経過Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特純Ｖ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特解約返戻金相当額（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特剰・通（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特年度始積配当金額（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特当年度配当金額（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特当年度配当利息額（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特前納未経過Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "配特普通未経過Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "マスタ修正年月日",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "特剰配当年度",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "剰余金額１",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "剰余金額２",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "剰余金額３",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特Ｎ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特剰金（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特変更後Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特変更後営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特変更後Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特変更後既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特増Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特Ｎ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特剰金（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特変更後Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特変更後営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特変更後Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特変更後既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特増Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済Ｎ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済剰金（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済変更後Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済変更後営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済変更後Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済変更後既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済増Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済Ｎ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済剰金（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済変更後Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済変更後営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済変更後Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済変更後既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済増Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不Ｎ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不剰金（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不変更後Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不変更後営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不変更後Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不変更後既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不増Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不Ｎ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不剰金（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不変更後Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不変更後営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不変更後Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不変更後既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不増Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免Ｎ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免剰金（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免変更後Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免変更後営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免変更後Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免変更後既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免増Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免Ｎ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免剰金（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免変更後Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免変更後営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免変更後Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免変更後既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免増Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免Ｎ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免剰金（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免変更後Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免変更後営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免変更後Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免変更後既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免増Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免Ｎ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免剰金（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免変更後Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免変更後営業Ｐ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免変更後Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免変更後既払Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免増Ｓ（１）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特Ｎ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特剰金（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特変更後Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特変更後営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特変更後Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特変更後既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特増Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特Ｎ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特剰金（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特変更後Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特変更後営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特変更後Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特変更後既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特増Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済Ｎ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済剰金（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済変更後Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済変更後営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済変更後Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済変更後既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済増Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済Ｎ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済剰金（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済変更後Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済変更後営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済変更後Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済変更後既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済増Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不Ｎ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不剰金（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不変更後Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不変更後営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不変更後Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不変更後既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不増Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不Ｎ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不剰金（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不変更後Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不変更後営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不変更後Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不変更後既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不増Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免Ｎ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免剰金（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免変更後Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免変更後営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免変更後Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免変更後既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免増Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免Ｎ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免剰金（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免変更後Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免変更後営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免変更後Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免変更後既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免増Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免Ｎ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免剰金（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免変更後Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免変更後営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免変更後Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免変更後既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免増Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免Ｎ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免剰金（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免変更後Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免変更後営業Ｐ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免変更後Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免変更後既払Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免増Ｓ（２）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特Ｎ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特剰金（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特変更後Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特変更後営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特変更後Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特変更後既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特増Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特Ｎ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特剰金（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特変更後Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特変更後営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特変更後Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特変更後既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特増Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済Ｎ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済剰金（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済変更後Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済変更後営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済変更後Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済変更後既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特料済増Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済Ｎ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済剰金（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済変更後Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済変更後営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済変更後Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済変更後既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特料済増Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不Ｎ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不剰金（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不変更後Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不変更後営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不変更後Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不変更後既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払不増Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不Ｎ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不剰金（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不変更後Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不変更後営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不変更後Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不変更後既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払不増Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免Ｎ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免剰金（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免変更後Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免変更後営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免変更後Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免変更後既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特払免増Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免Ｎ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免剰金（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免変更後Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免変更後営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免変更後Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免変更後既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特払免増Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免Ｎ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免剰金（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免変更後Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免変更後営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免変更後Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免変更後既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末被特傷免増Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免Ｎ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免剰金（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免変更後Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免変更後営業Ｐ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免変更後Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免変更後既払Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "月年末配特傷免増Ｓ（３）",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "nenkinshoumetsu"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

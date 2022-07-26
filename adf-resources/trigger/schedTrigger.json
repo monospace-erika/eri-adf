@@ -1,0 +1,25 @@
+{
+	"name": "schedTrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyCSVToSQL",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 10,
+				"startTime": "2022-06-28T03:00:00",
+				"endTime": "2022-06-30T11:30:00",
+				"timeZone": "Tokyo Standard Time"
+			}
+		}
+	}
+}

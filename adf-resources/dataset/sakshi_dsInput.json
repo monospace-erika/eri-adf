@@ -1,0 +1,39 @@
+{
+	"name": "sakshi_dsInput",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blob_SHIR_ls",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Sakshi_test_ds"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "eritest_sakshi.csv",
+				"container": "input"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

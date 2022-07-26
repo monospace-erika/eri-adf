@@ -1,0 +1,26 @@
+{
+	"name": "sakshi_dsOutput",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blob_SHIR_ls",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Sakshi_test_ds"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "output",
+				"container": "adftutorial"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
