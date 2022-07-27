@@ -1,5 +1,5 @@
 {
-	"name": "CopyCSVToSQL",
+	"name": "CopyCSVToSQL_copy1",
 	"properties": {
 		"activities": [
 			{
@@ -139,7 +139,7 @@
 			}
 		],
 		"annotations": [],
-		"lastPublishTime": "2022-06-30T02:00:45Z"
+		"lastPublishTime": "2022-07-26T08:21:41Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }
