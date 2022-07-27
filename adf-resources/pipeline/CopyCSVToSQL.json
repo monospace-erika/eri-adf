@@ -127,15 +127,6 @@
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "Wait1",
-				"type": "Wait",
-				"dependsOn": [],
-				"userProperties": [],
-				"typeProperties": {
-					"waitTimeInSeconds": 90
-				}
 			}
 		],
 		"annotations": [],
