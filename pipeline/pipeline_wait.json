@@ -8,10 +8,7 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"waitTimeInSeconds": {
-		                        "value": "@pipeline().globalParameters.blob_container",
-		                        "type": "Expression"
-		                    }
+					"waitTimeInSeconds": 1
 				}
 			}
 		],
