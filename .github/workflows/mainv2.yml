@@ -33,7 +33,7 @@ jobs:
       with:
         scope: 'resourcegroup'
         resourceGroupName: 'RG-eri-adf-v1'
-        template: ./eri-adf-git/ARMTemplateForFactory.json
+        template: ./eri-adf/eri-adf-git/ARMTemplateForFactory.json
         parameters: |
           @eri-adf-git/ARMTemplateParametersForFactory.json
           @eri-adf-git/ARMTemplateProdParams.json
