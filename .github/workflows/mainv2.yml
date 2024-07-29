@@ -4,6 +4,10 @@ on:
       - adf_publish
   workflow_dispatch:
 
+permissions:
+      id-token: write
+      contents: read
+      
 env:
   prod_adf_name: eri-adf-uat
   prod_adf_resource_group: RG-eri-adf-v1
