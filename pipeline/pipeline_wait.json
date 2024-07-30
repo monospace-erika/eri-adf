@@ -14,8 +14,7 @@
 		],
 		"parameters": {
 			"hello": {
-				"type": "string",
-				"defaultValue": "eri"
+				"type": "string"
 			}
 		},
 		"annotations": [],
