@@ -7,11 +7,11 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "eri-adf-git"
 		},
-		"pipeline_Wait2_properties_0_typeProperties": {
+		"pipeline_Wait2_properties_0_typeProperties_waitTimeInSeconds": {
 			"type": "int"
 		},
-		"pipeline_wait_properties_0_typeProperties": {
-			"type": "int"
+		"pipeline_wait_properties_0_typeProperties_waitTimeInSeconds": {
+			"type": "string"
 		},
 		"containerUri": {
 			"type": "string",
@@ -40,11 +40,11 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"pipeline_Wait2_properties_0_typeProperties": {
-						"value": "[parameters('pipeline_Wait2_properties_0_typeProperties')]"
+					"pipeline_Wait2_properties_0_typeProperties_waitTimeInSeconds": {
+						"value": "[parameters('pipeline_Wait2_properties_0_typeProperties_waitTimeInSeconds')]"
 					},
-					"pipeline_wait_properties_0_typeProperties": {
-						"value": "[parameters('pipeline_wait_properties_0_typeProperties')]"
+					"pipeline_wait_properties_0_typeProperties_waitTimeInSeconds": {
+						"value": "[parameters('pipeline_wait_properties_0_typeProperties_waitTimeInSeconds')]"
 					}
 				}
 			},
