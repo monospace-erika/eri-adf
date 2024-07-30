@@ -7,8 +7,7 @@
 		},
 		"pipeline_wait_properties_parameters_hello": {
 			"value": {
-				"type": "string",
-				"defaultValue": "eri"
+				"type": "string"
 			}
 		},
 		"containerUri": {
