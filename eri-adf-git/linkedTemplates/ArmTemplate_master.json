@@ -7,11 +7,9 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "eri-adf-git"
 		},
-		"pipeline_wait_properties_parameters_hello": {
-			"type": "object",
-			"defaultValue": {
-				"type": "string"
-			}
+		"AzureBlobStorage_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage'"
 		},
 		"containerUri": {
 			"type": "string",
@@ -40,8 +38,8 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"pipeline_wait_properties_parameters_hello": {
-						"value": "[parameters('pipeline_wait_properties_parameters_hello')]"
+					"AzureBlobStorage_connectionString": {
+						"value": "[parameters('AzureBlobStorage_connectionString')]"
 					}
 				}
 			},

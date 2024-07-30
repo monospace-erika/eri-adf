@@ -5,10 +5,8 @@
 		"factoryName": {
 			"value": "eri-adf-git"
 		},
-		"pipeline_wait_properties_parameters_hello": {
-			"value": {
-				"type": "string"
-			}
+		"AzureBlobStorage_connectionString": {
+			"value": ""
 		},
 		"containerUri": {
 			"value": ""
