@@ -12,6 +12,12 @@
 				}
 			}
 		],
+		"parameters": {
+			"hello": {
+				"type": "string",
+				"defaultValue": "eri"
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2024-07-18T05:24:14Z"
 	},
