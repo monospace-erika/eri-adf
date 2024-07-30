@@ -8,14 +8,17 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"waitTimeInSeconds": 1
+					"waitTimeInSeconds": {
+						"value": "@pipeline().parameters.hello",
+						"type": "Expression"
+					}
 				}
 			}
 		],
 		"parameters": {
 			"hello": {
-				"type": "string",
-				"defaultValue": "eri"
+				"type": "int",
+				"defaultValue": 1
 			}
 		},
 		"annotations": [],
