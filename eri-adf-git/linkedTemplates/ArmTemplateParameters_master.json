@@ -5,6 +5,12 @@
 		"factoryName": {
 			"value": "eri-adf-git"
 		},
+		"pipeline_Wait2_properties_0_typeProperties": {
+			"value": ""
+		},
+		"pipeline_wait_properties_0_typeProperties": {
+			"value": ""
+		},
 		"containerUri": {
 			"value": ""
 		},

@@ -7,6 +7,12 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "eri-adf-git"
 		},
+		"pipeline_Wait2_properties_0_typeProperties": {
+			"type": "int"
+		},
+		"pipeline_wait_properties_0_typeProperties": {
+			"type": "int"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -33,6 +39,12 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"pipeline_Wait2_properties_0_typeProperties": {
+						"value": "[parameters('pipeline_Wait2_properties_0_typeProperties')]"
+					},
+					"pipeline_wait_properties_0_typeProperties": {
+						"value": "[parameters('pipeline_wait_properties_0_typeProperties')]"
 					}
 				}
 			},

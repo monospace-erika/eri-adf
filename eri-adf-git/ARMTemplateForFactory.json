@@ -6,6 +6,12 @@
 			"type": "string",
 			"metadata": "Data Factory name",
 			"defaultValue": "eri-adf-git"
+		},
+		"pipeline_Wait2_properties_0_typeProperties": {
+			"type": "int"
+		},
+		"pipeline_wait_properties_0_typeProperties": {
+			"type": "int"
 		}
 	},
 	"variables": {
@@ -24,7 +30,7 @@
 						"dependsOn": [],
 						"userProperties": [],
 						"typeProperties": {
-							"waitTimeInSeconds": 1
+							"waitTimeInSeconds": "[parameters('pipeline_Wait2_properties_0_typeProperties')]"
 						}
 					}
 				],
@@ -49,7 +55,7 @@
 						"userProperties": [],
 						"typeProperties": {
 							"waitTimeInSeconds": {
-								"value": "@pipeline().parameters.hello",
+								"value": "[parameters('pipeline_wait_properties_0_typeProperties')]",
 								"type": "Expression"
 							}
 						}
