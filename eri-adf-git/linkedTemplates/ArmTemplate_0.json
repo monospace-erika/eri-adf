@@ -7,11 +7,12 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "eri-adf-git"
 		},
-		"pipeline_Wait2_properties_0_typeProperties_waitTimeInSeconds": {
-			"type": "int"
-		},
-		"pipeline_wait_properties_0_typeProperties_waitTimeInSeconds": {
-			"type": "string"
+		"pipeline_wait_properties_parameters_hello": {
+			"type": "object",
+			"defaultValue": {
+				"type": "string",
+				"defaultValue": "eri"
+			}
 		}
 	},
 	"variables": {
@@ -30,7 +31,7 @@
 						"dependsOn": [],
 						"userProperties": [],
 						"typeProperties": {
-							"waitTimeInSeconds": "[parameters('pipeline_Wait2_properties_0_typeProperties_waitTimeInSeconds')]"
+							"waitTimeInSeconds": 1
 						}
 					}
 				],
@@ -54,10 +55,7 @@
 						"dependsOn": [],
 						"userProperties": [],
 						"typeProperties": {
-							"waitTimeInSeconds": {
-								"value": "[parameters('pipeline_wait_properties_0_typeProperties_waitTimeInSeconds')]",
-								"type": "Expression"
-							}
+							"waitTimeInSeconds": 1
 						}
 					}
 				],
@@ -65,10 +63,7 @@
 					"elapsedTimeMetric": {}
 				},
 				"parameters": {
-					"hello": {
-						"type": "int",
-						"defaultValue": 1
-					}
+					"hello": "[parameters('pipeline_wait_properties_parameters_hello')]"
 				},
 				"annotations": [],
 				"lastPublishTime": "2024-07-18T05:24:14Z"
