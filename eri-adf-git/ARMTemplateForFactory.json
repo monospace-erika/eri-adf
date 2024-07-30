@@ -31,7 +31,8 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
-				"annotations": []
+				"annotations": [],
+				"lastPublishTime": "2024-07-18T06:06:23Z"
 			},
 			"dependsOn": []
 		},
@@ -47,14 +48,24 @@
 						"dependsOn": [],
 						"userProperties": [],
 						"typeProperties": {
-							"waitTimeInSeconds": 1
+							"waitTimeInSeconds": {
+								"value": "@pipeline().parameters.hello",
+								"type": "Expression"
+							}
 						}
 					}
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
-				"annotations": []
+				"parameters": {
+					"hello": {
+						"type": "int",
+						"defaultValue": 1
+					}
+				},
+				"annotations": [],
+				"lastPublishTime": "2024-07-18T05:24:14Z"
 			},
 			"dependsOn": []
 		}
