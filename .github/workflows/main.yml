@@ -12,8 +12,10 @@ jobs:
     runs-on: windows-latest
   
     steps:
-    - uses: SQLPlayer.DataFactoryTools.PublishADF.PublishADFTask@2
-      name: 'Publish ADF eri-adf-uat from JSON files'
+    - uses: actions/checkout@v2
+
+    - name: 'Publish ADF eri-adf-uat from JSON files'
+      uses: SQLPlayer.DataFactoryTools.PublishADF.PublishADFTask@2      
       with:
         azureSubscription: eriSynapseConnV2
         ResourceGroupName: 'RG-eri-adf-v1'
