@@ -12,13 +12,8 @@ jobs:
     runs-on: windows-latest
   
     steps:
-    - uses: actions/checkout@v2
-
-    - name: 'Publish ADF eri-adf-uat from JSON files'
-      uses: Azure/PublishADFTask@2      
-      with:
-        azureSubscription: eriSynapseConnV2
-        ResourceGroupName: 'RG-eri-adf-v1'
-        DataFactoryName: 'eri-adf-uat'
-        DataFactoryCodePath: '${{github.workspace}}'
-        Location: 'East US'
+    - name: Check out repository code
+    - uses: actions/checkout@v4
+    - name: Perform a Pester test from the command-line
+      shell: pwsh
+      run: Write-Output "Hello, World!"
