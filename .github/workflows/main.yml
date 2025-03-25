@@ -14,7 +14,13 @@ jobs:
     steps:
     - name: Check out repository code
       uses: actions/checkout@v4
-    - name: Perform a Pester test from the command-line
+    - name: Install from PSGallery
+      shell: pwsh
+      run: |
+        Set-PSRepository PSGallery -InstallationPolicy Trusted
+        Install-Module Az, azure.datafactory.tools
+        Import-Module -Name azure.datafactory.tools
+    - name: ADF Publish using JSON
       shell: pwsh
       run: |
         $SubscriptionName = '8bc23a88-43fa-43e2-8df6-33b565fb915f'
