@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: 'Publish ADF eri-adf-uat from JSON files'
-      uses: PublishADFTask@2      
+      uses: Azure/PublishADFTask@2      
       with:
         azureSubscription: eriSynapseConnV2
         ResourceGroupName: 'RG-eri-adf-v1'
