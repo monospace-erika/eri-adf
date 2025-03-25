@@ -1,23 +1,24 @@
-name: Publish ADF
-
 on:
   push:
     branches:
-      - main
+    - main
+
+permissions:
+      id-token: write
+      contents: read
 
 jobs:
   build:
     runs-on: windows-latest
-
+  
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
-    - name: Publish ADF eri-adf-uat from JSON files
-      uses: Azure/data-factory-tools@v2
+    - name: 'Publish ADF eri-adf-uat from JSON files'
+      uses: PublishADFTask@2      
       with:
         azureSubscription: eriSynapseConnV2
         ResourceGroupName: 'RG-eri-adf-v1'
         DataFactoryName: 'eri-adf-uat'
-        DataFactoryCodePath: '${{ github.workspace }}'
+        DataFactoryCodePath: '${{github.workspace}}'
         Location: 'East US'
