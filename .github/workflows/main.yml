@@ -20,6 +20,10 @@ jobs:
         Set-PSRepository PSGallery -InstallationPolicy Trusted
         Install-Module Az, azure.datafactory.tools
         Import-Module -Name azure.datafactory.tools
+    - uses: azure/login@v2
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        enable-AzPSSession: true
     - name: ADF Publish using JSON
       shell: pwsh
       run: |
