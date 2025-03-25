@@ -16,4 +16,11 @@ jobs:
       uses: actions/checkout@v4
     - name: Perform a Pester test from the command-line
       shell: pwsh
-      run: Write-Output "Hello, World!"
+      run: |
+        $SubscriptionName = '8bc23a88-43fa-43e2-8df6-33b565fb915f'
+        Set-AzContext -Subscription $SubscriptionName
+        $ResourceGroupName = 'RG-eri-adf-v1'
+        $DataFactoryName = "eri-adf-uat"
+        $Location = "EastUS"
+        $RootFolder = "${{github.workspace}}"
+        Publish-AdfV2FromJson -RootFolder "$RootFolder" -ResourceGroupName "$ResourceGroupName" -DataFactoryName "$DataFactoryName" -Location "$Location"
